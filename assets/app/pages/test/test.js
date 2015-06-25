@@ -8,8 +8,9 @@
 
 
 angular.module('assetsApp')
-	.controller('SubmitCtrl',['$scope', '$log', '$http', '$rootScope', 'userService', 'authService', '$cookieStore', 'submitService','$state',
+	.controller('TestCtrl',['$scope', '$log', '$http', '$rootScope', 'userService', 'authService', '$cookieStore', 'submitService','$state',
 		function($scope, $log, $http, $rootScope, userService, authService, $cookieStore, submitService, $state) {
+
 
 
 	}]);

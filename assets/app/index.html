@@ -59,23 +59,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Algoquiz</a>
+                <a class="navbar-brand page-scroll" ui-sref="home">Algoquiz</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">Topscores</a>
+                        <a class="page-scroll" ui-sref="topscores">Topscores</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Submit question</a>
+                        <a class="page-scroll" ui-sref="submit">Submit question</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">{{$root.user.username}}</a>
+                        <a class="page-scroll" ui-sref="profile({id: $root.user.id})">{{$root.user.username}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact" ng-click="logout()">Log out</a>
+                        <a class="page-scroll" href="login" ng-click="logout()">Log out</a>
                     </li>
                 </ul>
             </div>
@@ -141,10 +141,14 @@
     <script src="app.js"></script>
     <script src="pages/home/home.js"></script>
     <script src="pages/login/login.js"></script>
+    <script src="pages/topscores/topscores.js"></script>
+    <script src="pages/test/test.js"></script>
+    <script src="pages/profile/profile.js"></script>
+    <script src="pages/submit/submit.js"></script>
     <script src="common/services/auth.js"></script>
     <script src="common/services/user.js"></script>
     <script src="common/services/http.js"></script>
-    <script src="pages/submit/submit.js"></script>
+    <script src="common/services/submit.js"></script>
     <!-- endbuild -->
 
 

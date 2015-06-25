@@ -128,7 +128,7 @@ aside {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: #fff;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -217,12 +217,12 @@ header .header-content .header-content-inner p {
     }
 
     header .header-content {
-        /*position: absolute;*/
-        top: 50%;
+        position: relative;
+        top: 50px;
         padding: 0 50px;
-        -webkit-transform: translateY(-50%);
+/*        -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        transform: translateY(-50%);*/
     }
 
     header .header-content .header-content-inner {

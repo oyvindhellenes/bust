@@ -21,6 +21,26 @@
           url: '/login',
           templateUrl: 'pages/login/login.html',
           controller: 'LoginCtrl'
+          })          
+          .state('topscores', {
+          url: '/topscores',
+          templateUrl: 'pages/topscores/topscores.html',
+          controller: 'TopscoresCtrl'
+          })          
+          .state('profile', {
+          url: '/profile/:id',
+          templateUrl: 'pages/profile/profile.html',
+          controller: 'ProfileCtrl'
+          })          
+          .state('submit', {
+          url: '/submit',
+          templateUrl: 'pages/submit/submit.html',
+          controller: 'SubmitCtrl'
+          })          
+          .state('test', {
+          url: '/test/:id',
+          templateUrl: 'pages/test/test.html',
+          controller: 'TestCtrl'
           })
 
       $httpProvider.interceptors.push('httpInterceptor');
