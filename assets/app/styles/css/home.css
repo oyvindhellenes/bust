@@ -1,0 +1,27 @@
+table tr:hover {
+	color: white;
+	background-color: #f05f40;
+	cursor: pointer;
+
+}
+
+.activeTableRow {
+	color: white;
+	background-color: #f05f40;
+	cursor: pointer;
+
+}
+
+table tr {
+	color: #888;
+	background-color: #fff;
+	text-align: left;
+}
+
+header .header-content .header-content-inner p {
+    
+}
+
+header .header-content .header-content-inner h1 {
+    color: #222;
+}

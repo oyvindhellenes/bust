@@ -29,6 +29,13 @@ angular.module('assetsApp')
             value: false
         }
 
+        $scope.cormen = '';
+
+        $http.get('pages/home/content.json').then(function(data){
+            $scope.cormen = data.data;
+            console.log(data.data);
+        })
+
         $scope.logout = function(){
         	authService.logout();
         	$rootScope.user = {};
@@ -58,43 +65,5 @@ angular.module('assetsApp')
         	
         };
 
-            $scope.login = function(credentials){
-                var success = function(data){
-                    if (!data.success) {
-                        $scope.validationErrors = [];
-                        $scope.validationErrors.push("Incorrect username/password combination.");
-                    }
-                    else {
-
-                        console.log('data' + angular.toJson(data));
-                        $rootScope.isLoggedIn = true;
-
-                        // Store the oauth data
-                        $rootScope.oauth = data;
-
-                        // Also store it in cookie
-                        $cookieStore.put('oauth', data);
-
-                        userService.user(data.user[0].id)
-                        .success(function (resp){
-                            console.log('resp' + angular.toJson(resp));
-                            $rootScope.user = resp;
-
-                        })
-                        .error(function (resp){
-                            $log.info('Not working');
-                        });
-                        
-                    }
-                };
-
-                var loginError = function(err) {
-                    $scope.validationErrors = [];
-                    $scope.validationErrors.push("Incorrect username/password combination.");
-                };
-
-                // Sends credentials with responses to the authentication service
-                authService.login(credentials).success(success).error(loginError);
-            };	
 
 	}]);

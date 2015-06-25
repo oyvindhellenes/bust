@@ -9,20 +9,25 @@
     .config(['$httpProvider','$urlRouterProvider', '$stateProvider',
     function($httpProvider, $urlRouterProvider, $stateProvider) {
 
-      $urlRouterProvider.otherwise('/home');
+      $urlRouterProvider.otherwise('/login');
       
       $stateProvider
           .state('home', {
           url: '/home',
-          templateUrl: 'views/main.html',
+          templateUrl: 'pages/home/home.html',
           controller: 'HomeCtrl'
+          })
+          .state('login', {
+          url: '/login',
+          templateUrl: 'pages/login/login.html',
+          controller: 'LoginCtrl'
           })
 
       $httpProvider.interceptors.push('httpInterceptor');
     }
   ])
-    .run(['$rootScope', '$injector','$location','authService', '$cookieStore', 'userService', 
-      function ($rootScope, $injector, $location, authService, $cookieStore, userService) {
+    .run(['$rootScope', '$injector','$location','authService', '$cookieStore', 'userService','$state', 
+      function ($rootScope, $injector, $location, authService, $cookieStore, userService, $state) {
 
       // Injects the authorization header on each api call
       $injector.get("$http").defaults.transformRequest = function(data, headersGetter) {
@@ -46,11 +51,11 @@
               userService.user($rootScope.oauth.user[0].id).success(function (resp){
                   console.log('Setting user from userService.user() ');
                   $rootScope.user = resp;
+                  $state.go('home');
 
               }).error(function () {
                   console.log('Is already logged in but unable to get userdata');
               });
-              
           }
           else {
               $cookieStore.remove('oauth');

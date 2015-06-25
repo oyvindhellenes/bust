@@ -1,0 +1,47 @@
+
+<h1>Test yourself</h1>
+<img src="styles/img/cormen.png">
+<hr>
+<div class="col-sm-6 col-sm-offset-3">
+  
+  <form ng-submit="login($parent.loginCredentials)" class="simple-form">
+      <h1>Choose chapters</h1>
+      <br>
+      <br>
+      <table class="table table">
+
+        <tr ng-repeat="chapter in cormen.chapters" ng-class="chapter.active ? 'activeTableRow':''" ng-click="chapter.active = !chapter.active">
+          <td >
+            {{chapter.nr}}
+          </td>          
+          <td >
+            {{chapter.name}}
+          </td>
+        </tr>
+      </table>
+<!--       <ul>
+        <li ng-repeat="chapter in cormen.chapters">
+          <p>{{chapter.name}}</p>
+        </li>
+      </ul> -->
+
+      <button class="btn btn-primary" type="submit">+</button>
+
+      <br>
+      <br>
+      <p>Choose difficulty degree</p>
+      <select class="form-control">
+        <option>Easy</option>
+        <option>Medium</option>
+        <option>Hard</option>
+        <option>Fucking Hard</option>
+      </select>
+      <br>
+      <ul class="list-inline">
+          <li>
+              <button class="btn btn-primary" type="submit">Take the test</button>
+          </li>                          
+      </ul>
+      <br>
+  </form>
+</div>

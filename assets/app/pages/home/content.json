@@ -1,0 +1,180 @@
+{
+	"chapters": [
+		{
+			"nr": 1,
+			"name": "The Role of Algorithms in Computing",
+			"active": false
+		},		
+		{
+			"nr": 2,
+			"name": "Getting Started",
+			"active": false
+		},
+		{
+			"nr": 3,
+			"name": "Growth of Functions",
+			"active": false
+		},
+		{
+			"nr": 4,
+			"name": "Divide-and-Conquer",
+			"active": false
+		},
+		{
+			"nr": 5,
+			"name": "Probabilistic Analysis and Randomized Algorithms",
+			"active": false
+		},
+		{
+			"nr": 6,
+			"name": "Heapsort",
+			"active": false
+		},
+		{
+			"nr": 7,
+			"name": "Quicksort",
+			"active": false
+		},
+		{
+			"nr": 8,
+			"name": "Sorting in Linear Time",
+			"active": false
+		},
+		{
+			"nr": 9,
+			"name": "Medians and Order Statistics",
+			"active": false
+		},
+		{
+			"nr": 10,
+			"name": "Elementary Data Structures",
+			"active": false
+		},
+		{
+			"nr": 11,
+			"name": "Hash Tables",
+			"active": false
+		},
+		{
+			"nr": 12,
+			"name": "Binary Search Trees",
+			"active": false
+		},
+		{
+			"nr": 13,
+			"name": "Red-Black Trees",
+			"active": false
+		},
+		{
+			"nr": 14,
+			"name": "Augmenting Data Structures",
+			"active": false
+		},
+		{
+			"nr": 15,
+			"name": "Dynamic Programming",
+			"active": false
+		},		
+		{
+			"nr": 16,
+			"name": "Greedy Algorithms",
+			"active": false
+		},		
+		{
+			"nr": 17,
+			"name": "Amortized Analysis",
+			"active": false
+		},
+		{
+			"nr": 18,
+			"name": "B-Trees",
+			"active": false
+		},
+		{
+			"nr": 19,
+			"name": "Fibonacci Heaps",
+			"active": false
+		},
+		{
+	 		"nr": 20,
+			"name": "van Emde Boas Trees",
+			"active": false
+		},
+		{
+			"nr": 21,
+			"name": "Data Structures for Disjoint Sets",
+			"active": false
+		},
+		{
+			"nr": 22,
+			"name": "Elementary Graph Algorithms",
+			"active": false
+		},
+		{
+			"nr": 23,
+			"name": "Minimum Spanning Trees",
+			"active": false
+		},
+		{
+			"nr": 24,
+			"name": "Single-Source Shortest Paths",
+			"active": false
+		},
+		{
+			"nr": 25,
+			"name": "All-Pairs Shortest Paths",
+			"active": false
+		},
+		{
+			"nr": 26,
+			"name": "Maximum Flow",
+			"active": false
+		},
+		{
+			"nr": 27,
+			"name": "Multithreaded Algorithms",
+			"active": false
+		},
+		{
+			"nr": 28,
+			"name": "Matrix Operations",
+			"active": false
+		},
+		{
+			"nr": 29,
+			"name": "Linear Programming",
+			"active": false
+		},
+		{
+			"nr": 30,
+			"name": "Polynomials and the FFT",
+			"active": false
+		},
+		{
+			"nr": 31,
+			"name": "Number-Theoretic Algorithms",
+			"active": false
+		},
+		{
+			"nr": 32,
+			"name": "String Matching",
+			"active": false
+		},
+		{
+			"nr": 33,
+			"name": "Computational Geometry",
+			"active": false
+		},
+		{
+			"nr": 34,
+			"name": "NP-Completeness",
+			"active": false
+		},
+		{
+			"nr": 35,
+			"name": "Approximation Algorithms",
+			"active": false
+		}
+
+	]
+}
