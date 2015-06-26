@@ -46,6 +46,96 @@ header .header-content .header-content-inner h1 {
     color: #4EA6CA;
 }
 
-/*.navbar-default {
-    background-color: #B6EAFF;
-}*/
+header .header-content {
+    top: 100px;
+}
+
+
+.question {
+	text-align: left;
+	color: #222;
+}
+
+.question h3{
+	font-weight: lighter;
+}
+
+#question-text{
+	color: #888;
+	padding-left: 40px;
+}
+
+label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4
+}
+
+/* hide input */
+input.radio:empty {
+	margin-left: -999px;
+	position: absolute;
+}
+
+/* style label */
+input.radio:empty ~ label {
+	position: relative;
+	line-height: 2.5em;
+	margin-top: 1em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.radio:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+	border-radius: 3px 0 0 3px;
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #C2C2C2;
+}
+
+input.radio:hover:not(:checked) ~ label {
+	color: #888;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #fff;
+	background-color: #f05f40;
+}
+
+input.radio:checked ~ label {
+	color: #777;
+}
+
+/* radio focus */
+
+header .header-content .header-content-inner p {
+    margin: 5px;
+    max-width: 100%;
+}
+
+.progress-bar {
+  background-color: #f05f40;
+}
+
+.progress {
+  height: 5px;
+  background-color: #C2C2C2;
+}
