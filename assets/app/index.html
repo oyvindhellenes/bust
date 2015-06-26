@@ -35,6 +35,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/css/creative.css" type="text/css">
     <link rel="stylesheet" href="styles/css/home.css" type="text/css">
+    <link rel="stylesheet" href="pages/submit/submit.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -59,26 +60,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" ui-sref="home">Algoquiz</a>
+                <a class="navbar-brand" ui-sref="home">Algoquiz</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" ui-sref="topscores">Topscores</a>
+                        <a ui-sref="topscores">Topscores</a>
                     </li>                    
                     <li>
-                        <a class="page-scroll" ui-sref="test">Test</a>
+                        <a ui-sref="test">Test</a>
                     </li>
                     <li>
-                        <a class="page-scroll" ui-sref="submit">Submit question</a>
+                        <a ui-sref="submit">Submit question</a>
                     </li>
                     <li>
-                        <a class="page-scroll" ui-sref="profile({id: $root.user.id})">{{$root.user.username}}</a>
+                        <a ui-sref="profile({id: $root.user.id})">{{$root.user.username}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="login" ng-click="logout()">Log out</a>
+                        <a ui-sref="login" ng-click="logout()">Log out</a>
                     </li>
                 </ul>
             </div>

@@ -46,6 +46,11 @@ header .header-content .header-content-inner h1 {
     color: #4EA6CA;
 }
 
+.navbar-default.affix .nav > li>a,
+.navbar-default.affix .nav>li>a:focus {
+    color: #f05f40;
+}
+
 header .header-content {
     top: 100px;
 }

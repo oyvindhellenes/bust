@@ -34,6 +34,9 @@ var bcrypt = require('bcrypt-nodejs');
 	        type: 'string',
 	        defaultsTo: 'images/profile.png'
 	    },
+	    tests: {
+	    	collection: 'test'
+	    },
 	    isAdmin: function(){
 	    	return this.userType == 3;
 	    },

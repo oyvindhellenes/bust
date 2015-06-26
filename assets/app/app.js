@@ -6,14 +6,14 @@
     .constant('config', {
         baseUrl: 'http://localhost:1337/'
       })
-    .config(['$httpProvider','$urlRouterProvider', '$stateProvider',
-    function($httpProvider, $urlRouterProvider, $stateProvider) {
+    .config(['$httpProvider','$urlRouterProvider', '$stateProvider','$locationProvider',
+    function($httpProvider, $urlRouterProvider, $stateProvider, $locationProvider) {
 
-      $urlRouterProvider.otherwise('/login');
+      //$urlRouterProvider.otherwise('/');
       
       $stateProvider
           .state('home', {
-          url: '/home',
+          url: '/',
           templateUrl: 'pages/home/home.html',
           controller: 'HomeCtrl'
           })
@@ -44,10 +44,19 @@
           })
 
       $httpProvider.interceptors.push('httpInterceptor');
+
+      // Yeah we wanna to use HTML5 urls!
+      // $locationProvider
+      //   .html5Mode({
+      //     enabled: true,
+      //     requireBase: false
+      //   })
+      //   .hashPrefix('!')
+      // ;
     }
   ])
-    .run(['$rootScope', '$injector','$location','authService', '$cookieStore', 'userService','$state', 
-      function ($rootScope, $injector, $location, authService, $cookieStore, userService, $state) {
+    .run(['$rootScope', '$injector','$location','authService', '$cookieStore', 'userService','$state', '$stateParams',
+      function ($rootScope, $injector, $location, authService, $cookieStore, userService, $state, $stateParams) {
 
       // Injects the authorization header on each api call
       $injector.get("$http").defaults.transformRequest = function(data, headersGetter) {
